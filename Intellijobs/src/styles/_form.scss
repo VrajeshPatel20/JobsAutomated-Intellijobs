@@ -1,0 +1,28 @@
+@import '_header.scss';
+@import '_variables.scss';
+
+.form_container{
+  background-color: $white;
+  label, input{
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  input{
+    border-radius: 0.2rem;
+  }
+  input:focus {
+    background-color: lighten($color: $main-color, $amount: 70);
+  }
+}
+
+.singlejob-btn {
+        background-color: $main-color;
+        color: $white;
+        border: 0;
+        height: 50px;
+        padding: 0px 30px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+

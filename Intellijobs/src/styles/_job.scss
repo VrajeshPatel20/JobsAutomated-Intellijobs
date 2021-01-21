@@ -1,0 +1,38 @@
+@import '_variables';
+.job__container {
+  width: 96%;
+  margin-top: 30px;
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 4px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  .right__container {
+    .title {
+      font-size: 1.7rem;
+    }
+    .apply_url {
+      margin-top: 10px;
+    }
+  }
+  .left__container {
+    input[type='checkbox'] {
+      height: 25px;
+      width: 25px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      border: 1px solid #34495e;
+      border-radius: 4px;
+      outline: none;
+      transition-duration: 0.3s;
+      background-color: lighten($color: $main-color, $amount: 60);
+      cursor: pointer;
+    }
+    input:checked {
+      border: 1px solid lighten($color: $main-color, $amount: 60);
+      background-color: $main-color;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '_variables';
+.header__container {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  .header__container-left {
+    .logo {
+      font-size: 1.8rem;
+    }
+  }
+  .header__container-right {
+    width: 50%;
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        list-style: none;
+        font-size: 1.5rem;
+      }
+      .list-item:hover {
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+}
